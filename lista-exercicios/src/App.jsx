@@ -1,6 +1,4 @@
-
 import './App.css'
-import './components/Menu.jsx'
 import { Outlet } from 'react-router-dom'
 
 function App() {
