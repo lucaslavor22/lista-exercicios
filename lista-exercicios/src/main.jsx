@@ -1,9 +1,13 @@
 //Importando arquivos necessários para a MAIN
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
+import EditarProdutos from './routes/EditarProdutos/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
 import Error from './routes/Error/index.jsx'
-import EditarProduto from './routes/EditarProdutos/index.jsx'
 
 
 //Criando possíveis rotas para a aplicação
@@ -27,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/produtos/editar/:id",
-        element: <EditarProduto/>
+        element: <EditarProdutos/>
       },
       {
         path: "/antiga",

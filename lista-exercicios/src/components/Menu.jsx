@@ -4,7 +4,7 @@ export default function Menu(){
 
     return(
         <nav cladsName="menu">
-            <Link to="/">Home</Link>
+            <Link to='/'>Home</Link>
             <span> | </span>
             <Link to='/produtos'>Produtos</Link>
         </nav>
