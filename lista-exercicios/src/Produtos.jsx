@@ -6,6 +6,7 @@ export default function Produtos(){
     return(
         <main>
             <h1>Produtos</h1>
+            {/* O map sendo usado para renderizar a lista de elementos */}
             {listaProdutos.map(prod => (
                 <div key={prod.id}>
                     <Link to={`/produtos/editar/${prod.id}`}>
